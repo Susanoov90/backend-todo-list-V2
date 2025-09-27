@@ -1,3 +1,7 @@
+<?php 
+include('../actions/addTasks.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,10 +108,18 @@
       <div class="row">
          <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
             <div class="add-control">
-               <div class="form-group has-feedback">
-                  <input type="text" class="form-control" placeholder="✍️ Add item..." />
-                  <i class="fa fa-plus form-control-feedback add-btn" title="Add item"></i>
-               </div>
+               <form class="form-group has-feedback" method="POST" >
+                  <input type="text" class="form-control" placeholder="✍️ Add item..." name="nom"/>
+                  <label for="story" class='label-id' style='color : white'>description:</label>
+                  <textarea id="story" name="description" rows="5" cols="33">
+                  </textarea>
+                  <text>
+                  <div>
+                     <button type="submit" class="" > Add item
+                    </button>
+                  </div>
+                 
+                </form>
             </div>
             <p class="err text-danger text-center hidden"><i class="fa fa-warning"></i> Oops! Please, enter name item
             </p>
