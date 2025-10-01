@@ -115,7 +115,7 @@ include('../actions/addTasks.php');
                   </textarea>
                   <text>
                      <div>
-                        <button type="submit" class=""> Add item
+                        <button type="submit" name="pushSubmit" class=""> Add item
                         </button>
                      </div>
 
@@ -128,6 +128,18 @@ include('../actions/addTasks.php');
                <!-- Ici apparaitra les données. Quand l'action getTask sera fini. Tu trouveras un moyen de :
                   1- Faire une boucle en php
                   2- A l'interieur de la boucle, un code HTML sera répété-->
+               <li data-id="">
+                  <div class="checkbox">
+                     <span class="close">
+                        <i class="fa fa-times"></i>
+                     </span>
+                     <label>
+                        <span class="checkbox-mask"></span>
+                        <input type="checkbox" /> example </label>
+                  </div>
+               </li>
+
+
             </ul>
          </div>
       </div>
@@ -153,3 +165,4 @@ include('../actions/addTasks.php');
 </body>
 
 </html>
+</li>
