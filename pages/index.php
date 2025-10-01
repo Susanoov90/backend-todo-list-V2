@@ -129,7 +129,7 @@ include("../actions/listTask.php")
                <!-- Ici apparaitra les données. Quand l'action getTask sera fini. Tu trouveras un moyen de :
                   1- Faire une boucle en php
                   2- A l'interieur de la boucle, un code HTML sera répété-->
-               <?php for ($i = 0; $i < $length; $i++) { ?>
+               <?php foreach ($rows as $row) { ?>
                   <li data-id="">
                      <div class="checkbox">
                         <span class="close">
@@ -137,7 +137,7 @@ include("../actions/listTask.php")
                         </span>
                         <label>
                            <span class="checkbox-mask"></span>
-                           <input type="checkbox" /> example </label>
+                           <input type="checkbox" /> <?php echo $row["nom"] ?> - <?php echo $row["description"] ?> </label>
                      </div>
                   </li>
                <?php } ?>
