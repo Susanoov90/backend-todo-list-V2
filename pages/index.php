@@ -135,9 +135,9 @@ include('../actions/addTasks.php');
 
    <div class="footer">
       <h4>
-         Made with ❤️ by <a href="http://quentincolus.com">Quentin </a>
+         Made with ❤️ by <a href="http://quentincolus.com">Melki </a>
          <p> </p>
-         Thanks to <a href="https://www.linkedin.com/in/antoine-renault-a84b6398/">Antoine</a> for helping ! 🚀<a
+         Thanks to <a href="h">Melchisedek Gogoua</a> for helping ! 🚀<a
             href="http://todost.quentincolus.com/"> Todost</a>
       </h4>
    </div>
