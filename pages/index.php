@@ -1,5 +1,6 @@
 <?php
 include('../actions/addTasks.php');
+include("../actions/listTask.php")
 ?>
 
 <!DOCTYPE html>
