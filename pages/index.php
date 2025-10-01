@@ -1,4 +1,4 @@
-<?php 
+<?php
 include('../actions/addTasks.php');
 ?>
 
@@ -108,23 +108,26 @@ include('../actions/addTasks.php');
       <div class="row">
          <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
             <div class="add-control">
-               <form class="form-group has-feedback" method="POST" >
-                  <input type="text" class="form-control" placeholder="✍️ Add item..." name="nom"/>
+               <form class="form-group has-feedback" method="POST">
+                  <input type="text" class="form-control" placeholder="✍️ Add item..." name="nom" />
                   <label for="story" class='label-id' style='color : white'>description:</label>
                   <textarea id="story" name="description" rows="5" cols="33">
                   </textarea>
                   <text>
-                  <div>
-                     <button type="submit" class="" > Add item
-                    </button>
-                  </div>
-                 
-                </form>
+                     <div>
+                        <button type="submit" class=""> Add item
+                        </button>
+                     </div>
+
+               </form>
             </div>
             <p class="err text-danger text-center hidden"><i class="fa fa-warning"></i> Oops! Please, enter name item
             </p>
             <p class="no-items text-muted text-center hidden"><i class="fa fa-ban"></i></p>
             <ul class="todo-list">
+               <!-- Ici apparaitra les données. Quand l'action getTask sera fini. Tu trouveras un moyen de :
+                  1- Faire une boucle en php
+                  2- A l'interieur de la boucle, un code HTML sera répété-->
             </ul>
          </div>
       </div>
@@ -137,8 +140,8 @@ include('../actions/addTasks.php');
       <h4>
          Made with ❤️ by <a href="http://quentincolus.com">Melki </a>
          <p> </p>
-         Thanks to <a href="h">Melchisedek Gogoua</a> for helping ! 🚀<a
-            href="http://todost.quentincolus.com/"> Todost</a>
+         Thanks to <a href="h">Melchisedek Gogoua</a> for helping ! 🚀<a href="http://todost.quentincolus.com/">
+            Todost</a>
       </h4>
    </div>
 
