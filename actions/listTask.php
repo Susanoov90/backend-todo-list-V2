@@ -11,6 +11,8 @@
     //On recupere le nombre d'element du tableau
     $length = count($rows);
 
+    var_dump($rows);
+
     //Si c'est inferieur, c'est que ya rien oh
     if($length < 1){
         echo "Aucune donnée";
