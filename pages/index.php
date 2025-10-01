@@ -1,7 +1,7 @@
 <?php
 include('../actions/addTasks.php');
 include("../actions/listTask.php")
-?>
+   ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -129,18 +129,18 @@ include("../actions/listTask.php")
                <!-- Ici apparaitra les données. Quand l'action getTask sera fini. Tu trouveras un moyen de :
                   1- Faire une boucle en php
                   2- A l'interieur de la boucle, un code HTML sera répété-->
-               <li data-id="">
-                  <div class="checkbox">
-                     <span class="close">
-                        <i class="fa fa-times"></i>
-                     </span>
-                     <label>
-                        <span class="checkbox-mask"></span>
-                        <input type="checkbox" /> example </label>
-                  </div>
-               </li>
-
-
+               <?php for ($i = 0; $i < $length; $i++) { ?>
+                  <li data-id="">
+                     <div class="checkbox">
+                        <span class="close">
+                           <i class="fa fa-times"></i>
+                        </span>
+                        <label>
+                           <span class="checkbox-mask"></span>
+                           <input type="checkbox" /> example </label>
+                     </div>
+                  </li>
+               <?php } ?>
             </ul>
          </div>
       </div>
